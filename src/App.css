@@ -1,0 +1,96 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header,
+.footer {
+  padding: 20px;
+  text-align: center;
+}
+
+.header button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  padding: 25px;
+  width: 220px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Light Theme */
+
+.light {
+  background-color: #f4f4f4;
+  color: #222;
+}
+
+.light .card {
+  background-color: white;
+}
+
+.light button {
+  background-color: #222;
+  color: white;
+}
+
+/* Dark Theme */
+
+.dark {
+  background-color: #222;
+  color: white;
+}
+
+.dark .card {
+  background-color: #444;
+}
+
+.dark button {
+  background-color: white;
+  color: #222;
+}
+
+.themed-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.themed-button.light {
+  background-color: #222;
+  color: white;
+}
+
+.themed-button.dark {
+  background-color: white;
+  color: #222;
+}
